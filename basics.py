@@ -1120,9 +1120,10 @@ import os
 import sys
 
 import pytz
+import requests
 
 print(sys.version)
 print(sys.executable)
 
-name = input("Enter your name:")
-print(name)
+for tz in pytz.all_timezones:
+    print(tz)
